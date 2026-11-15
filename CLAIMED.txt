@@ -1,0 +1,26 @@
+# Lean declarations the report relies on, one fully qualified name per line.
+# Add a name only after `LEAN_DIR=zeta3/lean LEAN_LIB=Zeta3 python3 scripts/lean_check.py` passes with it.
+Zeta3.criterion
+Zeta3.apery_of_row_and_six
+Zeta3.wronskian_step
+Zeta3.rho_succ
+Zeta3.rho_shift
+Zeta3.six_identity
+Zeta3.rho_succ_shift
+Zeta3.lemma4
+Zeta3.row_identity
+Zeta3.growth_step
+Zeta3.growth_pow
+Zeta3.wronskian_const
+Zeta3.series_partial
+Zeta3.aperyU_pos
+Zeta3.aCoeff_mono
+Zeta3.aperyU_mono
+Zeta3.aperyU_zero
+Zeta3.aperyU_one
+Zeta3.aperyU_two
+Zeta3.aperyU_growth
+Zeta3.recTerm_succ
+Zeta3.aperyU_recurrence_shift
+Zeta3.aperyU_recurrence
+Zeta3.aperyU_growth_uncond
