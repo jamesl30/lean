@@ -13,3 +13,13 @@ import Zeta3.Zeta2Rec
 import Zeta3.TableMore
 import Zeta3.Conclusion
 import Zeta3.DavidField
+import Zeta3.BallAssembly
+import Zeta3.BallTop
+import Zeta3.BallDenominators
+import Zeta3.BallSeries
+import Zeta3.LucasCoeff
+import Zeta3.LucasHarm
+import Zeta3.LucasV
+import Zeta3.LucasVClosed
+import Zeta3.RowCol
+import Zeta3.SuperV

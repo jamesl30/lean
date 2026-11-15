@@ -17,7 +17,7 @@ are excluded by explicit hypotheses ("away from the poles").
    no hypothesis `t ≠ 1` is needed there, because `ρ_n(1) = 0`.  `zeta2_diag`: `t ≠ -(n+1)`, any
    `n ≥ 0`, `CharZero K` (the factor `4/(n+1)`).  `zeta2_third`: `t ≠ -(n+1)`.
    `S_2(t-1)` and `G_2(t-1)` are written out: `(t-1)σ_m(t-1)ρ_n(t)` and `(t-1-n)ρ_n(t)σ_n(t)`.
-3. `certificate`, `certificate_s` — §8, "The certificate of the standard proof": for `n ≥ 1` and
+3. `certificate`, `certificate_s` — §11, "The certificate of the standard proof": for `n ≥ 1` and
    `t ≠ -n, -(n+1)`, with `s(t) = 4(2n+1)(-2t²+t+(2n+1)²)` written out, `H(t-1) = s(t)ρ_n(t)²` and
    `H(t) = s(t+1)ρ_n(t+1)²`; `certificate_s` is the polynomial identity for `s` (by `ring`).
 4. `col_identity` — §11.4, (COL): `a = n+1`, `b = l+1` written out, `r = (b-a)(a²-ab+b²)`,
@@ -155,16 +155,16 @@ theorem zeta2_third {K : Type*} [Field K] (n : ℕ) (t : K) (h : t + (n : K) + 1
   field_simp
   ring
 
-/-! ## The certificate of the standard proof (§8) -/
+/-! ## The certificate of the standard proof (§11) -/
 
-/-- The two forms of `s(t)` in §8 agree (a polynomial identity). -/
+/-- The two forms of `s(t)` in §11 agree (a polynomial identity). -/
 theorem certificate_s {K : Type*} [Field K] (n : ℕ) (t : K) :
     4 * ((n : K) + 1) * ((n : K) + 1 - t) ^ 2 + 12 * (2 * (n : K) + 1) * ((n : K) + 1 - t) * (n + t)
         + 4 * (n : K) * (n + t) ^ 2
       = 4 * (2 * (n : K) + 1) * (-2 * t ^ 2 + t + (2 * (n : K) + 1) ^ 2) := by
   ring
 
-/-- The certificate of §8: for `n ≥ 1` and `t ≠ -n, -(n+1)`,
+/-- The certificate of §11: for `n ≥ 1` and `t ≠ -n, -(n+1)`,
 `(n+1)³ρ_{n+1}² - b_nρ_n² + n³ρ_{n-1}² = H(t) - H(t-1)` with `H(t-1) = s(t)ρ_n(t)²`,
 `H(t) = s(t+1)ρ_n(t+1)²`, `s(t) = 4(2n+1)(-2t²+t+(2n+1)²)`, `b_n = 34n³+51n²+27n+5`. -/
 theorem certificate {K : Type*} [Field K] (n : ℕ) (hn : 1 ≤ n) (t : K)
