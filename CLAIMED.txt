@@ -1,0 +1,45 @@
+# Lean declarations checked by scripts/lean_check.py, one fully qualified name per line.
+#
+# PART 1: the declarations the report names (its table "Lean declarations").
+# Legendre.lean
+Mathathon.Legendre.smooth_moebius_sum
+Mathathon.Legendre.legendre_convolution
+# MuMod3.lean
+Mathathon.MuMod3.mu_mod3
+Mathathon.MuMod3.mertens_mod3
+# LemmaF.lean
+Mathathon.LemmaF.fTCH_prime_pow
+Mathathon.LemmaF.fTCH_dvd_nine
+# MuMod8.lean
+Mathathon.MuMod8.mu_pattern
+Mathathon.MuMod8.mu_mod8
+# Kempner.lean
+Mathathon.Kempner.term_apply
+Mathathon.Kempner.kempner_general
+Mathathon.Kempner.kempner_b
+Mathathon.Kempner.kempner_a
+Mathathon.Kempner.kempner_c
+Mathathon.Kempner.kempner_c_order
+Mathathon.Kempner.prod_dvd_pow_sub_sum_coeffC
+Mathathon.Kempner.moebius_modEq_sum_phi
+#
+# PART 2: further declarations, checked in the same way. The report does NOT rely on them;
+# they are auxiliary steps of the Part 1 proofs or are referred to only by the ledgers
+# (supplementary/ledgers/) for lemmas of the claimed theorem on D_3.
+Mathathon.smoke
+Mathathon.BlockTail.gb_third_le
+Mathathon.BlockTail.tail_le
+Mathathon.BlockTail.d3_cube_twist
+Mathathon.BlockCount.pow4_congr_mod4
+Mathathon.BlockCount.sum_rpow_le
+Mathathon.BlockCount.block_charge
+Mathathon.BlockCount.block_count
+Mathathon.Rows.d3_sum_ordered
+Mathathon.Rows.sum_sorted_triples
+Mathathon.Rows.rows_decomp
+Mathathon.LemmaF.fTCH_one
+Mathathon.LemmaF.fTCH_mul
+Mathathon.MuMod8.uM_prime_pow
+Mathathon.MuMod8.hH_prime_pow
+Mathathon.MuMod8.uM_mul
+Mathathon.MuMod8.hH_mul
