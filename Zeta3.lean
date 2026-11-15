@@ -6,3 +6,7 @@ import Zeta3.Recurrence
 import Zeta3.Rho
 import Zeta3.Row
 import Zeta3.Wronskian
+import Zeta3.TableU
+import Zeta3.GrowthRate
+import Zeta3.Identities
+import Zeta3.Zeta2Rec
