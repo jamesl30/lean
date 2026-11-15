@@ -23,3 +23,4 @@ import Zeta3.LucasV
 import Zeta3.LucasVClosed
 import Zeta3.RowCol
 import Zeta3.SuperV
+import Zeta3.Hanson

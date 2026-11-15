@@ -548,8 +548,6 @@ Zeta3.VClosed.aperyV_three : Zeta3.VClosed.aperyV 3 = 62531 / 36
   M 0 0 = 0 → M 0 1 = 1 → M * !![0, 1; c, d] = !![0, 1; c, d] * M → M = !![0, 1; c, d]
 @Zeta3.RowCol.eq_half_of_commute : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (M : Matrix (Fin 2) (Fin 2) K),
   M 0 0 = 1 / 2 → M 0 1 = 1 / 2 → M * !![0, 1; 1, 4] = !![0, 1; 1, 4] * M → M = !![1 / 2, 1 / 2; 1 / 2, 5 / 2]
-Zeta3.SuperV.aperyV_zero : Zeta3.SuperV.aperyV 0 = 0
-Zeta3.SuperV.aperyV_one : Zeta3.SuperV.aperyV 1 = 6
 Zeta3.SuperV.aperyV_two : Zeta3.SuperV.aperyV 2 = 351 / 4
 Zeta3.SuperV.aperyV_three : Zeta3.SuperV.aperyV 3 = 62531 / 36
 Zeta3.SuperV.pcongPow_iff : ∀ (p k : ℕ),
@@ -570,3 +568,5 @@ Zeta3.SuperV.super_v_seven : ∀ (m : ℕ),
 Zeta3.SuperV.super_v_seven_pred : ∀ (m : ℕ),
   1 ≤ m → m < 7 → Zeta3.SuperV.PCongPow 7 3 (7 ^ 3 * Zeta3.SuperV.aperyV (7 * m - 1)) (Zeta3.SuperV.aperyV (m - 1))
 Zeta3.SuperV.super_v_five_sharp : ¬Zeta3.SuperV.PCongPow 5 4 (5 ^ 3 * Zeta3.SuperV.aperyV 5) (Zeta3.SuperV.aperyV 1)
+Zeta3.Hanson.lcm_Icc_lt_three_pow : ∀ (n : ℕ), 1 ≤ n → (Finset.Icc 1 n).lcm id < 3 ^ n
+Zeta3.Hanson.lcm_Icc_lt_three_pow_real : ∀ (n : ℕ), 1 ≤ n → ↑((Finset.Icc 1 n).lcm id) < 3 ^ n

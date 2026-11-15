@@ -193,8 +193,6 @@ Zeta3.RowCol.mix_of_row_col
 Zeta3.RowCol.commute_companion
 Zeta3.RowCol.eq_companion_of_commute
 Zeta3.RowCol.eq_half_of_commute
-Zeta3.SuperV.aperyV_zero
-Zeta3.SuperV.aperyV_one
 Zeta3.SuperV.aperyV_two
 Zeta3.SuperV.aperyV_three
 Zeta3.SuperV.pcongPow_iff
@@ -207,3 +205,5 @@ Zeta3.SuperV.super_v_five_pred
 Zeta3.SuperV.super_v_seven
 Zeta3.SuperV.super_v_seven_pred
 Zeta3.SuperV.super_v_five_sharp
+Zeta3.Hanson.lcm_Icc_lt_three_pow
+Zeta3.Hanson.lcm_Icc_lt_three_pow_real
