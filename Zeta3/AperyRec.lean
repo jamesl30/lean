@@ -193,7 +193,7 @@ theorem aperyU_recurrence (n : ℕ) (hn : 1 ≤ n) :
   push_cast
   linear_combination h
 
-/-- Lemma 8 for Apéry's numbers, unconditionally: 30·uₙ ≤ uₙ₊₁ for n ≥ 15. -/
+/-- Lemma 9 for Apéry's numbers, unconditionally: 30·uₙ ≤ uₙ₊₁ for n ≥ 15. -/
 theorem aperyU_growth_uncond (n : ℕ) (hn : 15 ≤ n) :
     30 * (aperyU n : ℝ) ≤ (aperyU (n + 1) : ℝ) := by
   refine aperyU_growth (fun k hk => ?_) n hn

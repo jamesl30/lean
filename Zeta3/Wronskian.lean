@@ -2,12 +2,12 @@ import Mathlib
 import Zeta3.Recurrence
 
 /-!
-# The Wronskian of two solutions of Apéry's recurrence (Proposition 7 of the text)
+# The Wronskian of two solutions of Apéry's recurrence (Proposition 8 of the text)
 
 If `u` and `z` both satisfy Apéry's recurrence (A) for all `n ≥ 1`, then
 `w k = u k * z (k-1) - u (k-1) * z k` satisfies `k³ wₖ = w₁` for every `k ≥ 1`
 (`wronskian_const`, by induction from `wronskian_step`). If moreover `u` never vanishes and the
-field has characteristic zero, this telescopes to the finite form of the series of Proposition 7
+field has characteristic zero, this telescopes to the finite form of the series of Proposition 8
 (`series_partial`):
 
   `z n / u n - z N / u N = ∑_{n < k ≤ N} w₁ / (k³ uₖ uₖ₋₁)`   for `n ≤ N`.
@@ -15,7 +15,7 @@ field has characteristic zero, this telescopes to the finite form of the series 
 
 namespace Zeta3
 
-/-- Proposition 7, `k³ wₖ = w₁`: for two solutions `u`, `z` of Apéry's recurrence (A),
+/-- Proposition 8, `k³ wₖ = w₁`: for two solutions `u`, `z` of Apéry's recurrence (A),
 `k³ (uₖ zₖ₋₁ - uₖ₋₁ zₖ) = u₁ z₀ - u₀ z₁` for every `k ≥ 1`. -/
 theorem wronskian_const {K : Type*} [Field K] (u z : ℕ → K)
     (hu : ∀ n : ℕ, 1 ≤ n →
@@ -36,7 +36,7 @@ theorem wronskian_const {K : Type*} [Field K] (u z : ℕ → K)
     push_cast
     rw [h, ih]
 
-/-- Proposition 7, finite form of the series: if moreover `u` never vanishes and `K` has
+/-- Proposition 8, finite form of the series: if moreover `u` never vanishes and `K` has
 characteristic zero, then for `n ≤ N`,
 `z n / u n - z N / u N = ∑_{k ∈ (n, N]} (u₁ z₀ - u₀ z₁) / (k³ uₖ uₖ₋₁)`. -/
 theorem series_partial {K : Type*} [Field K] [CharZero K] (u z : ℕ → K)

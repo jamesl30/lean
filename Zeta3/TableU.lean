@@ -17,7 +17,7 @@ We prove, as finite binomial-sum identities, each by a telescoping certificate i
 * symmetry `U(n,m) = U(m,n)`;
 * `U(n,n) = aperyU n`.
 
-Then `Zeta3.apery_of_row_and_six` (Proposition 5's elimination) applied to the table cast to ℚ gives
+Then `Zeta3.apery_of_row_and_six` (Proposition 6's elimination) applied to the table cast to ℚ gives
 Apéry's recurrence (A) for `aperyU`, without using `Zeta3.aperyU_recurrence`.
 
 Differences from the text: the text obtains (R) and (MIX) by reading the rational-function identities
@@ -190,10 +190,10 @@ theorem tableU_mix (n : ℕ) :
   simp only [sq] at hs
   linear_combination hs
 
-/-! ## Apéry's recurrence by elimination (Proposition 5) -/
+/-! ## Apéry's recurrence by elimination (Proposition 6) -/
 
 /-- Apéry's recurrence (A) for uₙ = U(n,n), obtained from (R), (MIX) and symmetry by the
-elimination of Proposition 5 (`apery_of_row_and_six`), not from the classical certificate. -/
+elimination of Proposition 6 (`apery_of_row_and_six`), not from the classical certificate. -/
 theorem aperyU_recurrence_via_table (n : ℕ) (hn : 1 ≤ n) :
     ((n : ℚ) + 1) ^ 3 * aperyU (n + 1)
       - (34 * (n : ℚ) ^ 3 + 51 * (n : ℚ) ^ 2 + 27 * (n : ℚ) + 5) * aperyU n

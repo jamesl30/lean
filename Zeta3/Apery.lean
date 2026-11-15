@@ -6,7 +6,7 @@ import Zeta3.Growth
 
 `aCoeff n k = C(n,k)·C(n+k,k)` and `aperyU n = Σ_{k=0}^{n} aCoeff n k ^ 2`.
 We prove `aperyU n > 0`, `aperyU n ≤ aperyU (n+1)`, the values `u₀ = 1`, `u₁ = 5`, `u₂ = 73`,
-and, assuming that `aperyU` satisfies Apéry's recurrence (A), the growth step of Lemma 8
+and, assuming that `aperyU` satisfies Apéry's recurrence (A), the growth step of Lemma 9
 (`growth_step` of `Zeta3.Growth`) for it. That (A) holds for `aperyU` is not proved here.
 -/
 
@@ -46,7 +46,7 @@ theorem aperyU_one : aperyU 1 = 5 := by decide
 
 theorem aperyU_two : aperyU 2 = 73 := by decide
 
-/-- Lemma 8 for Apéry's numbers, given the recurrence (A) for them as a hypothesis. -/
+/-- Lemma 9 for Apéry's numbers, given the recurrence (A) for them as a hypothesis. -/
 theorem aperyU_growth
     (hA : ∀ n : ℕ, 1 ≤ n →
       ((n : ℝ) + 1) ^ 3 * (aperyU (n + 1) : ℝ)

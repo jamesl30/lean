@@ -1,22 +1,22 @@
 import Mathlib
 
 /-!
-# Apéry's recurrence from the row and diagonal relations (Proposition 5 of the report)
+# Apéry's recurrence from the row and diagonal relations (Proposition 6 of the report)
 
-The algebraic step of Proposition 5: if a symmetric two-index table `f` satisfies the row relation
+The algebraic step of Proposition 6: if a symmetric two-index table `f` satisfies the row relation
 (5.4) and the diagonal relation (5.5), then its diagonal `y n = f n n` satisfies Apéry's recurrence
 
   `(n+1)³ y (n+1) - (34n³+51n²+27n+5) y n + n³ y (n-1) = 0`   (n ≥ 1).
 
 Only the instance `m = n` of (5.4) is used, together with (5.5) at `n` and at `n - 1`.
 
-The second declaration is the Wronskian step of Proposition 7: two solutions of (A) have a
+The second declaration is the Wronskian step of Proposition 8: two solutions of (A) have a
 "Wronskian" `w k = u k * z (k-1) - u (k-1) * z k` with `(k+1)³ w (k+1) = k³ w k`.
 -/
 
 namespace Zeta3
 
-/-- Proposition 5, the algebraic step: a symmetric two-index table satisfying the row relation
+/-- Proposition 6, the algebraic step: a symmetric two-index table satisfying the row relation
 (5.4) and the diagonal relation (5.5) satisfies Apéry's recurrence (A) on its diagonal. -/
 theorem apery_of_row_and_six {K : Type*} [Field K] (f : ℕ → ℕ → K)
     (hsymm : ∀ n m, f n m = f m n)
@@ -44,7 +44,7 @@ theorem apery_of_row_and_six {K : Type*} [Field K] (f : ℕ → ℕ → K)
   push_cast at hr h1 h0 ⊢
   linear_combination (6 : K) * hr + ((k : K) + 1 + 1) ^ 3 * h1 + ((k : K) + 1) ^ 3 * h0
 
-/-- Proposition 7, the Wronskian step: if `u` and `z` both satisfy Apéry's recurrence (A) for all
+/-- Proposition 8, the Wronskian step: if `u` and `z` both satisfy Apéry's recurrence (A) for all
 `n ≥ 1`, then `w k = u k * z (k-1) - u (k-1) * z k` satisfies `(k+1)³ w (k+1) = k³ w k` for `k ≥ 1`. -/
 theorem wronskian_step {K : Type*} [Field K] (u z : ℕ → K)
     (hu : ∀ n : ℕ, 1 ≤ n →

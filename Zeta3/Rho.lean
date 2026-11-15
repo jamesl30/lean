@@ -126,8 +126,8 @@ theorem rho_succ_shift {K : Type*} [Field K] (k : ℕ) (t : K) :
   field_simp
   ring
 
-/-- Lemma 4, identity (5.3), for `n ≥ 1` and `t ≠ -n, -(n+1)`. -/
-theorem lemma4 {K : Type*} [Field K] (n : ℕ) (hn : 1 ≤ n) (t : K)
+/-- The step in `n` in the proof of the row identity (ROW) of §11.4 (not Lemma 4 of the report), for `n ≥ 1` and `t ≠ -n, -(n+1)`. -/
+theorem row_step {K : Type*} [Field K] (n : ℕ) (hn : 1 ≤ n) (t : K)
     (h1 : t + (n : K) ≠ 0) (h2 : t + (n : K) + 1 ≠ 0) :
     ((n : K) + 1) ^ 3 * (rho (n + 1) t - rho n t) - (n : K) ^ 3 * (rho n t - rho (n - 1) t)
       = 2 * (2 * (n : K) + 1) * (t * (t - 1) * rho n t - t ^ 2 * rho n (t + 1)) := by

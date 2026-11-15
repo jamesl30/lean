@@ -10,3 +10,6 @@ import Zeta3.TableU
 import Zeta3.GrowthRate
 import Zeta3.Identities
 import Zeta3.Zeta2Rec
+import Zeta3.TableMore
+import Zeta3.Conclusion
+import Zeta3.DavidField

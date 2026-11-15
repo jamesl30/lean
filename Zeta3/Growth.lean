@@ -1,7 +1,7 @@
 import Mathlib
 
 /-!
-# The growth step (Lemma 8 of the report)
+# The growth step (Lemma 9 of the report)
 
 If a nonnegative, nondecreasing real sequence `u` satisfies Apéry's recurrence (A)
 
@@ -16,7 +16,7 @@ Proof: `(n+1)³ u (n+1) = bₙ u n - n³ u (n-1) ≥ (bₙ - n³) u n`, and
 
 namespace Zeta3
 
-/-- Lemma 8, the growth step: a nonnegative nondecreasing solution of Apéry's recurrence (A)
+/-- Lemma 9, the growth step: a nonnegative nondecreasing solution of Apéry's recurrence (A)
 satisfies `u (n+1) ≥ 30 u n` for `n ≥ 15`. -/
 theorem growth_step (u : ℕ → ℝ)
     (hu : ∀ n : ℕ, 1 ≤ n →
